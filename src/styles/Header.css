@@ -1,0 +1,136 @@
+.header__searchbar-container,
+.header__filterbar-container,
+.header__filterbar-wrapper {
+  height: 3rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1rem 2rem;
+}
+
+.header__searchbar-input {
+  width: 100%;
+  margin: 0 2rem;
+  
+  font-size: 1.25rem;
+  text-align: left;
+  
+  padding-left: 2rem;
+  border: 1px solid var(--color-dark-purple);
+  border-radius: 0.5rem;
+}
+
+.header__searchbar-button {
+  width: 10rem;
+  
+  font-size: 1.25rem;
+  
+  color: var(--color-white);
+  background: var(--color-dark-purple);
+
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.header__filterbar-container {
+  margin: 0 3rem;
+}
+
+.header__filterbar-wrapper {
+  align-items: center;
+  width: 45vw;
+  padding: 0;
+}
+
+.header__filterbar-text {
+  font-size: 1.25rem;
+  line-height: 3rem;
+}
+
+.header__filterbar-input {
+  height: 2rem;
+
+  text-align: center;
+  font-size: 1rem;
+
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-dark-purple);
+}
+
+@media screen and (max-width: 1300px){
+  .header__filterbar-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1.5rem;
+  }
+
+  .header__filterbar-wrapper {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 850px){
+  .header__filterbar-container {
+    flex-direction: row;
+    margin: 5rem 0;
+  }
+  .header__filterbar-wrapper {
+    flex-direction: column;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  ::placeholder {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+
+  .header__searchbar-container {
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+  .header__searchbar-img {
+    width: 7rem;
+  }
+
+  .header__searchbar-input,
+  .header__searchbar-button {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .header__searchbar-input {
+    width: 85vw;
+  }
+
+  .header__searchbar-button {
+    width: 90vw;
+  }
+
+  .header__filterbar-container {
+    flex-direction: column;
+    margin-top: 8rem;
+  }
+
+  .header__filterbar-wrapper {
+    margin-top: 5rem;
+    flex-direction: row;
+  }
+
+  .header__filterbar-text {
+    font-size: 1rem;
+  }
+
+  .header__filterbar-input {
+    width: 15vw;
+    margin: 0.5rem;
+  }
+}
