@@ -57,6 +57,7 @@ export default function BooksProvider({ children }) {
     books,
     pages,
     inputValues,
+    currentPage,
     currentPageBooks,
     inputHandler,
     searchBooks,
