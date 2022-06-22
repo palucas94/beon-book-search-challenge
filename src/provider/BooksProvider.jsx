@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
-import React, { useEffect, useMemo, useState } from 'react';
+import React, {
+  useCallback, useEffect, useMemo, useState,
+} from 'react';
 import BooksContext from '../context/BooksContext';
 import { fetchAllBooks, fetchFilteredBooks } from '../services/booksAPI';
 
@@ -39,17 +41,20 @@ export default function BooksProvider({ children }) {
     setCurrentPage(0);
   };
 
+  const getBooks = useCallback(
+    async () => {
+      const allBooks = await fetchAllBooks();
+      const currentBooks = allBooks.slice(startIndex, endIndex);
+      setBooks(allBooks);
+      setCurrentPageBooks(currentBooks);
+    },
+  );
+
   useEffect(() => {
     setCurrentBooks();
   }, [currentPage, books]);
 
   useEffect(() => {
-    async function getBooks() {
-      const allBooks = await fetchAllBooks();
-      const currentBooks = allBooks.slice(startIndex, endIndex);
-      setBooks(allBooks);
-      setCurrentPageBooks(currentBooks);
-    }
     getBooks();
   }, []);
 
