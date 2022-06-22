@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# BEON - Teste para a posição de Desenvolvedor Frontend ReactJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta é a minha solução para o problema proposto pelo [BEON](https://beon.com.br/). O BEON produz experiências de compra melhores para os seus clientes, e resultados de vendas melhores para você e para o seu e-commerce.
 
-## Available Scripts
+## Conteúdo
 
-In the project directory, you can run:
+- [Visão Geral](#visão-geral)
+  - [O Desafio](#o-desafio)
+  - [Screenshot](#screenshot)
+  - [Tecnologias](#tecnologias)
+- [Instruções de Uso](#instruções-de-uso)
+- [Autor](#autor)
 
-### `npm start`
+## Visão Geral
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### O Desafio
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Neste desafio foi criada uma interface para busca de livros, alimentada por um [JSON Server](https://github.com/typicode/json-server).
 
-### `npm test`
+É esperada as seguintes funcionalidades:
+- Buscar livros pelo título, autor ou idioma;
+- Listar livros (título, autor, idioma, ano);
+- Apresentar quantidades de registros encontrados;
+- Paginar o resultado da busca de 10 em 10 itens;
+- Filtrar livros pelo período (ano);
+- Visualizar detalhes do livro (apresentar todos os atributos);
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Screenshot
 
-### `npm run build`
+![](./src/images/app-img.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Tecnologias
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [ReactJS](https://reactjs.org/)
+- CSS
+- Context
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Instruções de Uso
 
-### `npm run eject`
+### 1 - Servidor
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Para rodar a aplicação corretamente, primeiro é necessário acessar nosso servidor [aqui](https://github.com/beonica/jsonserver) e seguir as orientações especificadas lá para o funcionamento correto da API.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2 - Frontend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Com nosso servidor rodando, podemos agora configurar nosso frontend:
+ - Clone este repositório:
+    - `git clone git@github.com:palucas94/beon-book-search-challenge.git`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ - Acesse a raíz da aplicação:
+    - `cd beon-book-search-challenge`
+    
+  - Instale as dependências do projeto:
+    - `npm install`
 
-## Learn More
+  - Inicie a aplicação:
+    - `npm start`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  - E pronto! A aplicação frontend rodará em [localhost:/3000](http://localhost:3000/) e o servidor em [http://localhost:4000/books](http://localhost:4000/books). Boa procura! :wink:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Autor
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- LinkedIn - [Lucas Pontes Arruda](https://www.linkedin.com/in/lucas-pontes-arruda/)
+- [Portfolio](https://palucas.vercel.app/)
