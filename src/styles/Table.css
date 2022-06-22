@@ -1,0 +1,52 @@
+table, thead, tbody, tr, th, td {
+  border-collapse: collapse;
+}
+
+table {
+  width: 80vw;
+  margin: auto;
+  margin-top: 2rem;
+  table-layout: auto;
+}
+
+th, td {
+  padding: 0.5rem;
+  border: 2px solid var(--color-light-gray);
+}
+
+th {
+  font-size: 1.15rem;
+  letter-spacing: 0.1rem;
+
+  background: var(--color-light-gray);
+}
+
+.table__details-button {
+  width: 100%;
+  background: none;
+  
+  border: 1px solid var(--color-light-gray);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.table__book-details {
+  display: none;
+
+  font-size: 1rem;
+  line-height: 1.5rem;
+  
+  padding: 2rem 3rem;
+}
+
+.show-book-details {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-very-light-gray);
+}
+
+@media screen and (max-width: 650px) {
+  table {
+    width: 100%;
+  }
+}
